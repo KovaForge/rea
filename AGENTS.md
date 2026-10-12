@@ -59,3 +59,14 @@ Read `docs/README.md` inside that installed package first, then read the relevan
 
 This block is written and re-added by `turbo` before repository-scoped commands when an AI agent is detected. In the Turborepo source repository, its template is defined in `crates/turborepo-cli/src/cli/agent_guidance.rs`. Removing the managed block while updates are enabled means a later qualifying invocation will add it again. Set `"agentGuidance": false` in the root `turbo.json` or `turbo.jsonc` to opt out; this does not remove an existing block. Keep the block committed with your work to avoid an uncommitted change on the next agent invocation.
 <!-- END:turborepo-agent-rules -->
+
+
+## KovaForge Fork Context
+
+Forked from: `morluto/rea` on 2026-10-12 by Vladislava Kova. Preserve the upstream guidance above when syncing.
+
+- Source checkout: `/home/mike/Work/morluto/rea`; KovaForge fork checkout: `/home/mike/Work/KovaForge/rea`.
+- `origin` is `KovaForge/rea`; `upstream` is `morluto/rea`. Push only to the KovaForge fork.
+- All Git operations in this checkout go through the active agent's per-person `git-<agent>` wrapper. Before pushing, run its `whoami` command and verify the destination is the KovaForge fork.
+- Commits use the KovaForge `commit-kf` alias, which scans staged changes for secrets and adds the required co-authors. See `/home/mike/Work/KovaForge/protocols/protocols/KVF-DEV-POL-001_Git_Policy.md`.
+- Do not commit `.env`, `*.env`, `secrets.json`, `credentials.*`, API keys, tokens, or passwords.

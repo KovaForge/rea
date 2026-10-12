@@ -71,3 +71,10 @@ Thumbs.db
 
 # Complete static website output, including generated language editions.
 website/_site/
+
+# KovaForge fork: local credentials
+.env
+.env.*
+*.env
+secrets.json
+credentials.*
